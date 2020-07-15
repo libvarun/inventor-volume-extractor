@@ -174,7 +174,8 @@ function startConnection(onReady) {
                 console.log(data)
                 $('#resultlog').append('<div style="border-top: 1px dashed #C0C0C0">' + '<a href="' + url + '">Download result file here</a>' + '</div>');
                 $('#resultlog').append('<div style="border-top: 1px dashed #C0C0C0">' + JSON.stringify(data, null, 2) + '</div>');
-                $('#resultlog').append('<div style="border-top: 1px dashed #C0C0C0">Volume = ' + data.volume + '</div>');
+                $('#resultlog').append('<div style="border-top: 1px dashed #C0C0C0">Area = ' + data.surface + ' cm<sup>2</sup></div>');
+                $('#resultlog').append('<div style="border-top: 1px dashed #C0C0C0">Volume = ' + data.volume + ' cm<sup>3</sup></div>');
             }
           });
     });
